@@ -1,5 +1,5 @@
 import express from "express"
-import cookiesParser from "cookies-parser";
+//import cookiesParser from "cookies-parser";
 import cors from "cors";
 
 const app=express();
@@ -19,7 +19,7 @@ app.use(express.urlencoded({
 }));
 //uploaded file will be store the folder
 app.use(express.static("public"));
-app.use(cookiesParser());
+//app.use(cookiesParser());
 /*+++++++++++++++basic configaration end here+++++++++++++++ */
 
 export default app;
