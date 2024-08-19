@@ -21,5 +21,8 @@ app.use(express.urlencoded({
 app.use(express.static("public"));
 //app.use(cookiesParser());
 /*+++++++++++++++basic configaration end here+++++++++++++++ */
+app.get('/',(err,req,res,next)=>{
+    console.log(err);
+})
 
 export default app;
